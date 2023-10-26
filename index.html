@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form id="loginForm">
+      <h1>𝐔𝐧𝐢𝐝𝐚𝐝𝐞:</h1>
+      <label>Propietário</label>
+      <input type="radio" name="opcao" id="op1">&nbsp;
+      <label>Inquilino</label>
+ <input type="radio" name="opcao" id="op1">&nbsp;
+
+    <label for="nome">NOME COMPLETO:</label>
+    <input type="text" id="nome" name="nome" required>
+    <label for="senha">RG:</label>
+    <input type="password" id="rg" name="rg" required>
+     <form id="loginForm">
+    <label for="nome">CPF:</label>
+    <input type="text" id="CPF" name="CPF" required>
+
+     <form id="loginForm">
+    <label for="nome">Telefone:</label>
+    <input type="text" id="TELEFONE" name="TELEFONE" required>
+
+ <form id="loginForm">
+    <label for="nome">Email:</label>
+    <input type="text" id="EMAIL" name="EMAIL" required>
+
+ <form id="loginForm">
+    <label for="nome">Celular:</label>
+    <input type="text" id="CELULAR" name="CELULAR" required>
+
+    
+<form id="loginForm">
+      <h1>Em caso de emergencia procure por:</h1>
+     
+    <label for="nome">NOME:</label>
+    <input type="text" id="nome" name="nome" required>
+     <form id="loginForm">
+    <label for="nome">TELEFONE/CELULAR:</label>
+    <input type="text" id="TELEFONE/CELULAR" name="TELEFONE/CELULAR" required>
+
+<form id="loginForm">
+      <h1>Em caso de locatário informar:</h1>
+     
+    <label for="nome">NOME:</label>
+    <input type="text" id="nome" name="nome" required>
+     <form id="loginForm">
+    <label for="nome">TELEFONE/CELULAR:</label>
+    <input type="text" id="TELEFONE" name="TELEFONE" required>
+
+<form id="loginForm">
+      <h1>Demais moradores da unidade:</h1>
+     
+    <label for="nome">NOME:</label>
+    <input type="text" id="nome" name="nome" required>
+    
+
+     <form id="loginForm">
+    <label for="nome">RG:</label>
+    <input type="text" id="RG" name="RG" required>
+
+
+ <label for="nome">GRAU DE PARENTESCO:</label>
+    
+    <input type="text" id="nome" name="nome" required>
+
+    <form id="loginForm">
+      <h1>Funcionário(s) da Unidade:</h1>
+     
+    <label for="nome">NOME:</label>
+ 
+ <input type="text" id="RG" name="NOME" required>
+ 
+     <form id="loginForm">
+    <label for="nome">RG:</label>
+    
+    <input type="text" id="RG" name="RG" required>
+  <label for="nome">CARGO:</label>
+    
+    <input type="text" id="TELEFONE" name="TELEFONE" required>
+    <label for="nome">EXPEDIENTE (HORÀRIO):</label>
+ 
+<input type="text" id="EXPEDIENTE" name="EXPEDIENTE" required>
+<form id="loginForm">
+      <h2>Veículos da unidade(carro,moto,etc):</h1>
+     
+    <label for="nome">MARCA:</label>
+ <input type="text" id="MARCA" name="MARCA" required>
+
+ 
+     <form id="loginForm">
+    <label for="nome">MODELO:</label>
+    <input type="text" id="MODELO" name="MODELO" required>
+    
+  <label for="nome">COR:</label>
+   
+    <input type="text" id="COR" name="COR" required>
+    <label for="nome">PLACA:</label>
+  
+    <input type="text" id="PLACA" name="PLACA" required>
+
+   <h2>Animais de estimação:</h>
+  
+    <label for="nome">NOME:</label>
+
+ <input type="text" id="RG" name="RG" required>
+ 
+ <label for="nome">Gato/cachorro/etc:</label>
+
+ <input type="text" id="NOME" name="NOME" required>
+
+     <form id="loginForm">
+    <label for="nome">Raça:</label>
+   
+    <input type="text" id="RAÇA" name="RAÇA" required>
+  <label for="nome">COR:</label>
+    
+    <input type="text" id="COR" name="COR" required>
+   
+    <h5>AUTORIZO O USO OS DADOS AQUI INFORMADS PARA FINS DE CONTROLE DE  ACESSO DESTE CONDOMÍNIO <h5>  <input type="radio" name="opcao" id="op1">&nbsp;
+
+  
+  
+
+
+  <script>
+    function enviarFormulario() {
+      var nome = document.getElementById('nome').value;
+      var senha = document.getElementById('senha').value;
+
+      // Criar um objeto JSON
+      var dados = {
+        nome: nome,
+        senha: senha
+      };
+
+      // Exibir no console
+      console.log(JSON.stringify(dados));
+    }
+  </script>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Formulário</title>
+
+  <div class="form">
+    <form method="post" action="index.php"><br>
+      <button type="button" onclick="enviarFormulario()">Enviar</button>
